@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="TW">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0 user-scalable=no">
+	<title>林育萱作品集</title>
+</head>
+
+<body>
+
+	<header class="menu_box clearfix">
+		<a href="#" class="menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<p>Works</p>
+	</header>
+
+	<div class="passboxlink">
+		<div class="top_close"></div>
+		
+		<div class="pabox">
+			<form action="demo.php" method="post">
+			<h2>*請輸入密碼</h2>
+			<h3>Password</h3>
+			<input type="password" name="password">
+			<button>sumbit</button>
+			</form>
+		</div>
+		
+	</div>
+	<!-- passboxlink -->
+
+	<div class="black_left_box clearfix">
+		<div href="#" class="close_b clearfix">
+			<a href="#"><span></span><span></span></a>
+		</div>
+
+		<div class="hr clearfix"></div>
+		<ul>
+			<li><a href="https://drive.google.com/file/d/1HliAhNNWmaqBShfn-172yGfvBVkekRs-/view?usp=sharing" target="_blank">我的履歷</a></li>
+			
+		</ul>
+	</div>
+	<!-- black_left_box -->
+
+	<div class="fly255"></div>
+	<div class="fly100"></div>
+	<div class="fly90"></div>
+
+	<article>
+	<ul class="works_list">
+		<li>
+			
+				<h2>林育萱</h2>
+				<h3>網頁設計六年經驗</h3>
+				<ol>
+					<li>專案設計(畫版、切版)。</li>
+					<li>專案統整分配。</li>
+					<li>與客戶進行專案風格溝通。</li>
+					<li>後續網站後台管理教學。</li>
+					<li>與程式設計等相關人員配合，協同執行專案。</li>
+					<li>日程管控。</li>
+					<li>安裝資料庫與簡易PHP程式修改。</li>
+				</ol>
+
+				<h3>工具：</h3>
+				<p>CSS3、HTML5、JQ、Js、SASS、RWD、Ｇit、gulp、bootstrap</p>
+				<p>jade/pug (略懂 - 獨立完成靜態前端UI)</p>
+				<p>Vue (略懂)</p>
+				<p>Nuxt (略懂 - 有協助過專案開發)</p>
+				
+				<h3>其他工具：</h3>
+				<p>Photoshop、Illustrator、Sublime、Vscode</p>
+
+				<h3>製作網站類型：</h3>
+				<p>企業網站、購物網站、活動網站、詢價網站、工會網站、公益網站。</p>
+
+				<h3>未來計劃：</h3>
+				<p>未來想要再精進，學習後端程式以及app開發。</p>
+			
+		</li>
+
+
+		
+	</ul>
+	</article>
+
+	<footer class="footer">林育萱  作品</footer>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=20180628">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/array.js?v=20180628"></script>
+<style type="text/css">
+	@import url(https://fonts.googleapis.com/earlyaccess/notosanskannada.css);
+</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var $Warray = wkarray.length;
+			for(i=0;i<$Warray;i++){
+				$('.works_list').append('<li><a href="'+wkarray[i][2]+'" target="_blank"><div class="img" style="background: url('+wkarray[i][3]+') no-repeat;"></div><h2>'+wkarray[i][0]+'</h2><p>- '+wkarray[i][1]+'</p></a></li>');
+			}	
+
+			
+
+		});
+		
+		$(function(){
+			$('.works_list li').each(function(i){
+				var $this = $(this);
+				setTimeout(function(){
+					$this.addClass('loadanimate');
+				},130*i)
+			});
+
+			$('.menu').click(function(){
+
+				$('.black_left_box').addClass('active');
+				$('body').addClass('active');
+				return false
+			});
+
+			$('.close_b a').click(function(){
+				  $('.black_left_box').removeClass('active');
+				  $('body').removeClass('active');			  
+				  return false
+				});
+
+			$('.open_show').click(function(){
+				 $('.passboxlink').addClass('active');
+				 $('.black_left_box').removeClass('active');
+				$('body').addClass('active');
+				return false  				 
+				});
+
+			$('.top_close').click(function(){
+				 $('.passboxlink').removeClass('active');
+				$('body').removeClass('active');
+				});
+
+		});
+
+
+
+	</script>
+</body>
+</html>
