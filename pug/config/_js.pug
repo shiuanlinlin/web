@@ -1,0 +1,4 @@
+//- each  "_config.jade" 的 jsArr，生成全部 js
+block js
+	each jsSrc in jsArr
+		script(src= "js/"+ jsSrc + vision)

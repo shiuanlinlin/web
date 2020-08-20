@@ -1,0 +1,19 @@
+//- 資料在 PUG / config / data.pug
+include ../config/data.pug
+header.menu_box
+	a.menu
+		span
+		span
+		span
+	p.mb-0 Works
+
+.black_left_box
+	.close_b
+		a(href="#")
+			span
+			span
+	.hr
+		ul
+			-for(var i=0;i<menu.length;i++)
+				li 
+					a(href=menu[i].href,target=menu[i].target) #{menu[i].title}
