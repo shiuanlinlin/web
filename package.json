@@ -1,0 +1,32 @@
+{
+  "name": "promotesite",
+  "version": "1.0.0",
+  "description": "> 新增版型 ：\r > 將版型資訊加到 data.js 的 demoProfile",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "browser-sync": "^2.26.12",
+    "gu": "^0.6.2",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.14.1",
+    "postcss-preset-env": "^6.7.0",
+    "pug": "^3.0.0",
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "gulp-postcss": "^8.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://shiuanshiuan@gitlabproject.jutainet.com/devgpk/promotesite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

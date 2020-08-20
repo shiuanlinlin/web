@@ -1,0 +1,26 @@
+.fly255
+.fly100
+.fly90
+section.section1
+	article
+		ul.works_list
+			li.loadanimate
+				h2.d-flex #{nameData[0].title}
+					block config
+						span.update 更新日期 #{year + montharray[month] + day}
+				h3 #{nameData[0].title2}
+				ol
+					-for(var i=0;i<nameData[0].sub[0].list.length; i++)
+						li #{nameData[0].sub[0].list[i].text}
+				-for(var i=0;i<nameData.length; i++)
+					-for(var s=0;s<nameData[i].sub.length; s++)
+						-if( nameData[i].sub[s].title != '' )
+							h3 #{nameData[i].sub[s].title}
+							-for(var v=0;v<nameData[i].sub[s].list.length; v++)
+								p.mb-0 #{nameData[i].sub[s].list[v].text}
+			-for(var i=0; i<workData.length;i++)
+				li.loadanimate
+					a(href=workData[i].linkurl,target="_blank")
+						.img(style="background: url("+workData[i].imgsrc+") no-repeat")
+						h2 #{workData[i].title}
+						p #{workData[i].type}
